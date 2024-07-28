@@ -5,33 +5,10 @@ import {
     FaJs,
     FaReact,
     FaNodeJs,
-    FaPython, FaDocker, FaJava
+    FaPython, FaDocker, FaJava, FaAws, FaLinux
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs, SiDjango, SiMysql, SiKubernetes} from "react-icons/si";
-
-// about data
-const about = {
-    title: "About Me",
-    info: [
-        {
-            fieldName: "Name",
-            fieldValue: "Shaunak Joshi",
-        },
-        {
-            fieldName: "Phone",
-            fieldValue: "(+1) 979-344-3680",
-        },
-        {
-            fieldName: "Location",
-            fieldValue: "Texas, USA",
-        },
-        {
-            fieldName: "Email",
-            fieldValue: "shaunakjoshi@tamu.edu",
-        },
-    ]
-};
+import { SiTailwindcss, SiNextdotjs, SiDjango, SiMysql, SiKubernetes, SiCplusplus, SiGit, SiTerraform} from "react-icons/si";
 
 //experience data
 const experience = {
@@ -113,6 +90,26 @@ const skills = {
             icon: <FaPython />,
             name: "python",
         },
+        { 
+            icon: <SiTerraform />, 
+            name: "Terraform"
+        },
+        { 
+            icon: <SiCplusplus />, 
+            name: "C++" 
+        },
+        { 
+            icon: <SiGit />, 
+            name: "Git" 
+        },
+        {
+            icon: <FaAws />,
+            name: "AWS",
+        },
+        {
+            icon: <FaLinux />,
+            name: "linux",
+        },
         {
             icon: <FaDocker />,
             name: "docker",
@@ -160,7 +157,6 @@ const Resume = () => {
                 <TabsTrigger value="experience">Experience</TabsTrigger>
                 <TabsTrigger value="education">Education</TabsTrigger>
                 <TabsTrigger value="skills">Skills</TabsTrigger>
-                <TabsTrigger value="about">About Me</TabsTrigger>
             </TabsList>
 
             {/*content*/}
@@ -236,26 +232,6 @@ const Resume = () => {
                             ))}
                         </ul>
                     </div>
-                </TabsContent>
-                {/*about*/}
-                <TabsContent 
-                    value="about" 
-                    className="w-full text-center xl:text-left"
-                >
-                   <div className="flex flex-col gap-[30px]">
-                    <h3 className="text-4xl font-bold">{about.title}</h3>
-                    <ul className="mt-2 grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0 ">
-                        {about.info.map((item, index) => {
-                            return <li 
-                                        key={index} 
-                                        className="flex items-center justify-center xl:justify-start gap-4"
-                                    >
-                                    <span className="text-accent/70">{item.fieldName}</span>
-                                    <span className="text-xl">{item.fieldValue}</span>
-                            </li>
-                        })}
-                    </ul>
-                   </div>
                 </TabsContent>
             </div>
             </Tabs>
