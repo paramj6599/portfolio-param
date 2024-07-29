@@ -5,10 +5,15 @@ import {
     FaJs,
     FaReact,
     FaNodeJs,
-    FaPython, FaDocker, FaJava, FaAws, FaLinux
+    FaPython,
+    FaDocker, 
+    FaJava, 
+    FaAws, 
+    FaLinux,
+    FaCloud 
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs, SiDjango, SiMysql, SiKubernetes, SiCplusplus, SiGit, SiTerraform} from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiDjango, SiMysql, SiKubernetes, SiCplusplus, SiGit, SiTerraform, SiMongodb, SiPostgresql, SiSqlite} from "react-icons/si";
 
 //experience data
 const experience = {
@@ -54,87 +59,47 @@ const education = {
 };
 
 //skills data
-const skills = {
-    title: "My skills",
-    description: "lorem",
-    skillList: [
-        {
-            icon: <FaHtml5 />,
-            name: "html5",
-        },
-        {
-            icon: <FaCss3 />,
-            name: "css3",
-        },
-        {
-            icon: <FaJs />,
-            name: "javascript",
-        },
-        {
-            icon: <FaReact />,
-            name: "react.js",
-        },
-        {
-            icon: <SiTailwindcss />,
-            name: "tailwind.css",
-        },
-        {
-            icon: <SiNextdotjs />,
-            name: "next.js",
-        },
-        {
-            icon: <FaNodeJs />,
-            name: "node.js",
-        },
-        {
-            icon: <FaPython />,
-            name: "python",
-        },
-        { 
-            icon: <SiTerraform />, 
-            name: "Terraform"
-        },
-        { 
-            icon: <SiCplusplus />, 
-            name: "C++" 
-        },
-        { 
-            icon: <SiGit />, 
-            name: "Git" 
-        },
-        {
-            icon: <FaAws />,
-            name: "AWS",
-        },
-        {
-            icon: <FaLinux />,
-            name: "linux",
-        },
-        {
-            icon: <FaDocker />,
-            name: "docker",
-        },
-        {
-            icon: <SiDjango />,
-            name: "django",
-        },
-        {
-            icon: <SiMysql />,
-            name: "mysql",
-        },
-        {
-            icon: <SiKubernetes />,
-            name: "kubernetes",
-        },
-        {
-            icon: <FaJava />,
-            name: "java",
-        },
-    ],
+const skillsCategories = {
+    languages: {
+        title: "Languages",
+        skills: [
+            { icon: <FaHtml5 />, name: "HTML5" },
+            { icon: <FaCss3 />, name: "CSS3" },
+            { icon: <FaJs />, name: "JavaScript" },
+            { icon: <FaPython />, name: "Python" },
+            { icon: <SiCplusplus />, name: "C++" },
+            { icon: <FaJava />, name: "Java" }
+        ],
+    },
+    frameworks: {
+        title: "Frameworks and Software tools",
+        skills: [
+            { icon: <FaReact />, name: "React.js" },
+            { icon: <SiNextdotjs />, name: "Next.js" },
+            { icon: <FaNodeJs />, name: "Node.js" },
+            { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+            { icon: <SiDjango />, name: "Django" },
+            { icon: <FaDocker />, name: "Docker" },
+            { icon: <SiTerraform />, name: "Terraform" },
+            { icon: <SiKubernetes />, name: "Kubernetes" },
+            { icon: <SiGit />, name: "Git" }
+        ],
+    },
+    cloudDatabases: {
+        title: "Cloud & databases",
+        skills: [
+            { icon: <FaAws />, name: "AWS" },
+            { icon: <FaCloud />, name: "Azure" },
+            { icon: <SiMysql />, name: "MySQL" },
+            { icon: <FaLinux />, name: "Linux" },
+            { icon: <SiMongodb />, name: "MongoDB" },
+            { icon: <SiPostgresql />, name: "PostgreSQL" },
+            { icon: <SiSqlite />, name: "SQLite" }
+        ],
+    },
 };
 
 import {Tabs, TabsContent, TabsList, TabsTrigger} from '@/components/ui/tabs';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 
@@ -219,19 +184,24 @@ const Resume = () => {
                 </TabsContent>
                 {/*skills*/}
                 <TabsContent value="skills" className="w-full h-full">
-                    <div className="flex flex-col gap-[30px]">
-                        <div className="flex flex-col gap-[30px] text-center xl:text-left ">
-                            <h3 className="text-4xl font-bold">{skills.title}</h3>
-                        </div>
-                        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                            {skills.skillList.map((skill, index) => (
-                                <li key={index} className="flex flex-col items-center justify-center w-full h-[180px] bg-[#232329] hover:text-accent rounded-xl duration-300">
-                                <div className="text-6xl">{skill.icon}</div>
-                                <p className="mt-2 text-white capitalize">{skill.name}</p>
-                                </li>
-                            ))}
-                        </ul>
+                <div className="flex flex-col gap-[30px]">
+                    <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                        <h3 className="text-4xl font-bold">My Skills</h3>
                     </div>
+                    {Object.values(skillsCategories).map((category, idx) => (
+                        <div key={idx}>
+                            <h4 className="text-3xl font-bold mt-6 mb-4">{category.title}</h4>
+                            <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                                {category.skills.map((skill, index) => (
+                                    <li key={index} className="flex flex-col items-center justify-center w-full h-[180px] bg-[#232329] hover:text-accent rounded-xl duration-300">
+                                        <div className="text-6xl">{skill.icon}</div>
+                                        <p className="mt-2 text-white capitalize">{skill.name}</p>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
+                </div>
                 </TabsContent>
             </div>
             </Tabs>

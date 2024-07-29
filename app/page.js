@@ -1,6 +1,6 @@
 "use client";
-import { Button } from "@/components/ui/button"
-import {FiDownload} from "react-icons/fi";
+import { Button } from "@/components/ui/button";
+import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import React, { useState, useEffect } from 'react';
@@ -9,6 +9,7 @@ const titles = ["Software Engineer", "Full Stack Engineer", "App Developer"];
 
 const Home = () => {
   const [titleIndex, setTitleIndex] = useState(0);
+  const resumeLink = "https://drive.google.com/file/d/1WC-JIx7kj5gXRrXZv3atzckDWbRGTcQp/view?usp=drive_link";
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -36,14 +37,16 @@ const Home = () => {
           <br/>
           <br/>
           <div className="flex flex-col xl:flex-row items-center gap-8">
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="flex uppercase items-center gap-2"
-            >
-              <span>Resume</span>
-              <FiDownload className="text-xl" />
-            </Button>
+            <a href={resumeLink} target="_blank" rel="noopener noreferrer">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="flex uppercase items-center gap-2"
+              >
+                <span>Resume</span>
+                <FiDownload className="text-xl" />
+              </Button>
+            </a>
             <div className="mb-8 xl:mb-0">
               <Social 
               containerStyles="flex gap-6" 
