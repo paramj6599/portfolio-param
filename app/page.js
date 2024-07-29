@@ -10,7 +10,7 @@ import { TypeAnimation } from "react-type-animation";
 const titles = ["Software Engineer", "Full Stack Engineer", "App Developer"];
 
 const Home = () => {
-  const resumeLink = "https://drive.google.com/file/d/1WC-JIx7kj5gXRrXZv3atzckDWbRGTcQp/view?usp=drive_link";
+  const resumeLink = "https://drive.google.com/file/d/1cnasNz_MTNE7QTGmiSRXqKk-kNI3_YNl/view?usp=sharing";
 
   return <section className="h-full">
     <div className="container mx-auto h-full">
