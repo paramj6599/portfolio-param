@@ -33,15 +33,15 @@ const AboutMe = () => {
   return (
     <section className="min-h-screen text-white p-12">
       <div className="container mx-auto">
-        <h1 className="text-4xl font-bold mb-6"> <span className="text-accent">About Me</span></h1>
+        <h1 className="text-4xl font-bold mb-6"> <span className="text-white/60">About Me</span></h1>
         <p className="text-xl">
-            As a <span className="text-accent">Masters in Computer Science</span> student at <span className="text-accent">Texas A&M University</span>, I have gained extensive experience in software development, cloud computing, and data visualization. My professional journey includes roles such as a Student Assistant at Texas A&M and an Associate Member of Technical Staff at Platform9 Systems, where I enhanced network security, developed APIs, and streamlined Kubernetes setups. I completed my <span className="text-accent">Bachelors in Engineering in Information Technology</span> from <span className="text-accent">University of Pune</span> in 2021.
+            As a <span className="text-accent">Masters in Computer Science</span> student at <span className="text-accent">Texas A&M University</span>, I have gained extensive experience in software development, cloud computing, and data visualization. My professional journey includes roles such as a Student Assistant at Texas A&M and an Associate Member of Technical Staff at Platform9 Systems, where I enhanced network security, developed APIs, and streamlined Kubernetes cluster setups. I completed my <span className="text-accent">Bachelors in Engineering in Information Technology</span> from <span className="text-accent">University of Pune</span> in 2021.
         </p>
         <p className="text-xl mt-6 mb-4">
             Beyond my professional life, I enjoy playing tennis, following football and Formula 1, and reading a variety of literature, from mythological tales to murder mysteries.
         </p>
         <p className="text-xl mt-6 mb-4">
-            I am broadly interested in <span className="text-accent">Full Stack software development</span>, <span className="text-accent">Machine Learning</span>, <span className="text-accent">NLP</span> and <span className="text-accent">Cloud Computing</span>. Currently, I am looking for Full time opportunities starting from May 2025. I am eager to leverage my academic foundation and industry experience to contribute effectively to innovative projects and teams!
+            I am broadly interested in <span className="text-accent">Full Stack software development</span>, <span className="text-accent">Machine Learning</span>, <span className="text-accent">NLP</span> and <span className="text-accent">Cloud Computing</span>. Currently, I am looking for <span className="text-accent">Full Time</span> opportunities starting from <span className="text-accent">May 2025</span>. I am eager to leverage my academic foundation and industry experience to contribute effectively to innovative projects and teams!
         </p>
         <p className="text-xl mt-6 mb-4">
             Thank you for taking the time to learn about my journey. Feel free to reach out to me for collaborations or discussions!

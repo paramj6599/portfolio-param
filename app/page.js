@@ -5,6 +5,8 @@ import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import React, { useState, useEffect } from 'react';
 
+import { TypeAnimation } from "react-type-animation";
+
 const titles = ["Software Engineer", "Full Stack Engineer", "App Developer"];
 
 const Home = () => {
@@ -24,12 +26,28 @@ const Home = () => {
       <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
         {/*text*/}
         <div className="text-center xl:text-left order-2 xl:order-none">
-          <span className="text-xl rotating-text">{titles[titleIndex]}</span>
           <h2 className="h2 mb-6">
-            Hello I am <br /> <span className="text-accent">Shaunak Joshi</span>
+            <span className="text-accent">Shaunak Joshi</span>
           </h2>
-          <p className="max-w-[500px] mb-15 text-white/80">
-            Full-Stack Software Developer who wants to create amazing user-centred digital products!
+          <div className="mb-6 text-[16px] lg:text-[30px] font-secondary font-semibold uppercase leading-[1]">
+            <span className="text-white mr-4">I am a</span>
+              <TypeAnimation 
+                sequence={[
+                  "Full Stack Engineer",
+                  2000,
+                  "Cloud Engineer",
+                  2000,
+                  "App Developer",
+                  2000,
+                ]}
+                speed={50}
+                className="text-accent"
+                wrapper="span"
+                repeat={Infinity}
+              />
+          </div>
+          <p className="max-w-[500px] mb-15 text-white/90 mt-10">
+            Software Developer who wants to create amazing user-centred digital products!
           <br/>
           </p>
           {/* button and socials */}
