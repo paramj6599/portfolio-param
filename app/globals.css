@@ -46,4 +46,17 @@
     .text-soft-coral {
         color: #F88379; /* Coral color */
     }
+    .button-hover:hover, .icon-hover:hover {
+        transform: scale(1.2); /* Enlarge the button by 10% */
+        transition: transform 0.3s ease-in-out; /* Smooth transition */
+    }
+
+    .icon-container {
+        display: inline-block; /* or flex, depending on your layout needs */
+        transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+    }
+
+    .icon-container:hover {
+        transform: scale(1.8); /* Increase the size of the icon on hover */
+    }
 }

@@ -52,6 +52,15 @@ const projects = [
     },
     {
         num: '5',
+        category: "Machine Learning, NLP",
+        title: "Sentiment Analysis of Yelp Review dataset",
+        description: "A machine learning model to predict the sentiment of Yelp reviews",
+        stack: [{name: "Python"}, {name: "Visualization"}, {name: "Machine Learning"}],
+        image: '/assets/work/yelp.webp',
+        github: 'https://github.com/ShaunakJoshi1407/Yelp_Sentiment_Analysis',
+    },
+    {
+        num: '6',
         category: "Machine Learning",
         title: "Blindness Detection using Machine Learning",
         description: "A machine learning model to detect blindness in patients",
@@ -113,7 +122,7 @@ const Work = () => {
                             {/* buttons */}
                             <div className="flex items-center gap-4">
                                 {/* github project button */}
-                                <Link href={project.github}>
+                                <Link href={project.github} className="icon-hover">
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex

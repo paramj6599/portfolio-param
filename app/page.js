@@ -10,16 +10,7 @@ import { TypeAnimation } from "react-type-animation";
 const titles = ["Software Engineer", "Full Stack Engineer", "App Developer"];
 
 const Home = () => {
-  const [titleIndex, setTitleIndex] = useState(0);
   const resumeLink = "https://drive.google.com/file/d/1WC-JIx7kj5gXRrXZv3atzckDWbRGTcQp/view?usp=drive_link";
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setTitleIndex((current) => (current + 1) % titles.length);
-    }, 12000); // Change title every 12 seconds
-
-    return () => clearInterval(intervalId);
-  }, []);
 
   return <section className="h-full">
     <div className="container mx-auto h-full">
@@ -33,14 +24,14 @@ const Home = () => {
             <span className="text-white mr-4 text-[23px]">I am a</span>
               <TypeAnimation 
                 sequence={[
-                  "Full Stack Engineer",
+                  "Full Stack Developer",
                   2000,
                   "Cloud Engineer",
                   2000,
-                  "App Developer",
+                  "Backend Engineer",
                   2000,
                 ]}
-                speed={50}
+                speed={40}
                 className="text-accent"
                 wrapper="span"
                 repeat={Infinity}
@@ -55,7 +46,7 @@ const Home = () => {
           <br/>
           <br/>
           <div className="flex flex-col xl:flex-row items-center gap-8">
-            <a href={resumeLink} target="_blank" rel="noopener noreferrer">
+            <a href={resumeLink} target="_blank" rel="noopener noreferrer" className="button-hover">
               <Button 
                 variant="outline" 
                 size="lg" 
