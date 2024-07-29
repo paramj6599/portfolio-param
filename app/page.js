@@ -29,8 +29,8 @@ const Home = () => {
           <h2 className="h2 mb-6">
             <span className="text-accent">Shaunak Joshi</span>
           </h2>
-          <div className="mb-6 text-[16px] lg:text-[30px] font-secondary font-semibold uppercase leading-[1]">
-            <span className="text-white mr-4">I am a</span>
+          <div className="mb-6 text-[18px] lg:text-[23px] font-secondary font-semibold uppercase leading-[1]">
+            <span className="text-white mr-4 text-[23px]">I am a</span>
               <TypeAnimation 
                 sequence={[
                   "Full Stack Engineer",
