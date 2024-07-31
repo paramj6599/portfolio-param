@@ -31,7 +31,7 @@ const services = [
 
 const AboutMe = () => {
   return (
-    <section className="min-h-screen text-white p-12">
+    <section className="min-h-screen text-white p-12 pt-3">
       <div className="container mx-auto">
         <h1 className="text-4xl font-bold mb-6"> <span className="text-white/60">About Me</span></h1>
         <p className="text-xl">
