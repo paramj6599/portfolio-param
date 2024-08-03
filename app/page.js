@@ -7,8 +7,6 @@ import React, { useState, useEffect } from 'react';
 
 import { TypeAnimation } from "react-type-animation";
 
-const titles = ["Software Engineer", "Full Stack Engineer", "App Developer"];
-
 const Home = () => {
   const resumeLink = "https://drive.google.com/file/d/1cnasNz_MTNE7QTGmiSRXqKk-kNI3_YNl/view?usp=sharing";
 
@@ -24,11 +22,13 @@ const Home = () => {
             <span className="text-white mr-4 text-[23px]">I am a</span>
               <TypeAnimation 
                 sequence={[
-                  "Full Stack Developer",
+                  "Software Developer",
                   2000,
                   "Cloud Engineer",
                   2000,
-                  "Backend Engineer",
+                  "Data Scientist",
+                  2000,
+                  "Tech-enthusiast",
                   2000,
                 ]}
                 speed={40}
