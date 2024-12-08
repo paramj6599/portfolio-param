@@ -8,7 +8,7 @@ import React, { useState, useEffect } from 'react';
 import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
-  const resumeLink = "https://drive.google.com/file/d/1-zIaFl8d8NU6AI65YnbMSbhNVnvY6s0U/view?usp=sharing";
+  const resumeLink = "https://drive.google.com/file/d/1dBe1KK1hqP2HHLr4rLvYBaOs3voehWJt/view?usp=drive_link";
 
   return <section className="h-full">
     <div className="container mx-auto h-full">

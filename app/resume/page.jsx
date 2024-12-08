@@ -90,6 +90,7 @@ const skillsCategories = {
         skills: [
             { icon: <FaAws />, name: "AWS" },
             { icon: <FaCloud />, name: "Azure" },
+            { icon: <FaCloud />, name: "GCP" },
             { icon: <SiMysql />, name: "MySQL" },
             { icon: <FaLinux />, name: "Linux" },
             { icon: <SiMongodb />, name: "MongoDB" },

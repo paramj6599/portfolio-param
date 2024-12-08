@@ -16,6 +16,15 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
     {
         num: '1',
+        category: "Full Stack, AI",
+        title: "MedGet",
+        description: "A comprehensive drug research platform that provides real-time analysis and visualization of FDA-approved drugs, integrating clinical data with financial insights through an AI-powered interface.",
+        stack: [{name: "Python"}, {name: "React.js"}, {name: "Next.js"}, {name: "LangChain"}, {name: "PostgreSQL"}],
+        image: '/assets/work/MedGet.png',
+        github: 'https://github.com/Aggies-Create-NeuroX1/MedGet',
+    },
+    {
+        num: '2',
         category: "Full Stack, Machine Learning",
         title: "Gradvisor",
         description: "A recommendation system that suggests universities based on user's preferences and academic profile.",
@@ -24,7 +33,7 @@ const projects = [
         github: 'https://mohitsarin-tamu.github.io/Gradvisor/',
     },
     {
-        num: '2',
+        num: '3',
         category: "Full Stack",
         title: "EpicCaptions",
         description: "Web application to generate epic subtitles for all your videos",
@@ -33,7 +42,7 @@ const projects = [
         github: 'https://github.com/ShaunakJoshi1407/epicCaptions',
     },
     {
-        num: '3',
+        num: '4',
         category: "Full Stack",
         title: "Salon Management and Appointment Booking System",
         description: "A web application to manage salon services and appointments",
@@ -42,7 +51,7 @@ const projects = [
         github: 'https://github.com/ShaunakJoshi1407/Salon-Management-System',
     },
     {
-        num: '4',
+        num: '5',
         category: "Data Analysis, Machine Learning",
         title: "Startup Funding Analysis",
         description: "A data analysis project to analyze the funding trends of startups",
@@ -51,7 +60,7 @@ const projects = [
         github: 'https://github.com/ShaunakJoshi1407/Startup-Funding-Analysis',
     },
     {
-        num: '5',
+        num: '6',
         category: "Machine Learning, NLP",
         title: "Sentiment Analysis of Yelp Review dataset",
         description: "A machine learning model to predict the sentiment of Yelp reviews",
@@ -60,7 +69,7 @@ const projects = [
         github: 'https://github.com/ShaunakJoshi1407/Yelp_Sentiment_Analysis',
     },
     {
-        num: '6',
+        num: '7',
         category: "Machine Learning",
         title: "Blindness Detection using Machine Learning",
         description: "A machine learning model to detect blindness in patients",
