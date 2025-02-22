@@ -23,7 +23,7 @@ const experience = {
     items: [
         {
             company: "Texas A&M University",
-            position: "Graduate Student Assistant",
+            position: "Software Developer, Student Assistant",
             duration: "Jan. 2024 - July 2024",
         },
         {
