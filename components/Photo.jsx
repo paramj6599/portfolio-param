@@ -22,7 +22,7 @@ const Photo = () => {
                 className='w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute'
             >
                 <Image 
-                    src="/assets/Portfolio.jpeg" 
+                    src="/assets/photo_3.png" 
                     priority 
                     quality={100} 
                     fill
@@ -33,7 +33,7 @@ const Photo = () => {
 
             {/* Circle */}
             <motion.svg 
-                className="w-[240px] xl:w-[466px] h-[240px] xl:h-[466px]" 
+                className="w-[256px] xl:w-[506px] h-[256px] xl:h-[506px]" 
                 fill="transparent" 
                 viewBox="0 0 506 506"
                 xmlns="http://www.w3.org/2000/svg"

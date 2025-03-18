@@ -24,7 +24,7 @@ const experience = {
         {
             company: "Texas A&M University",
             position: "Software Developer, Student Assistant",
-            duration: "Jan. 2024 - July 2024",
+            duration: "Jan. 2024 - Present",
         },
         {
             company: "Platform9 Systems",
