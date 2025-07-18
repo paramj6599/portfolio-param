@@ -22,9 +22,14 @@ const experience = {
     description: "lorem",
     items: [
         {
+            company: "Hewlett Packard Enterprise",
+            position: "Software Engineer (Systems)",
+            duration: "July 2025 - Present",
+        },
+        {
             company: "Texas A&M University",
-            position: "Software Developer, Student Assistant",
-            duration: "Jan. 2024 - Present",
+            position: "Student Software Developer",
+            duration: "Jan. 2024 - May. 2025",
         },
         {
             company: "Platform9 Systems",
@@ -48,7 +53,7 @@ const education = {
         {
             institution: "Texas A&M University",
             degree: "Master of Science in Computer Science",
-            duration: "Aug. 2023 - Present",
+            duration: "Aug. 2023 - May 2025",
         },
         {
             institution: "University of Pune",

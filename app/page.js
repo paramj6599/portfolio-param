@@ -18,25 +18,6 @@ const Home = () => {
           <h2 className="h2 mb-6">
             <span className="text-accent">Shaunak Joshi</span>
           </h2>
-          <div className="mb-6 text-[18px] lg:text-[23px] font-secondary font-semibold uppercase leading-[1]">
-            <span className="text-white mr-4 text-[23px]">I am a</span>
-              <TypeAnimation 
-                sequence={[
-                  "Software Developer",
-                  2000,
-                  "Cloud Engineer",
-                  2000,
-                  "Data Scientist",
-                  2000,
-                  "Tech-enthusiast",
-                  2000,
-                ]}
-                speed={40}
-                className="text-accent"
-                wrapper="span"
-                repeat={Infinity}
-              />
-          </div>
           <p className="max-w-[500px] mb-15 text-white/90 mt-10">
             Software Developer who wants to create amazing user-centred digital products!
           <br/>
