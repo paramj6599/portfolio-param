@@ -63,7 +63,7 @@ const projects = [
       image: "/assets/work/startup_2.webp",
       github: "https://github.com/ShaunakJoshi1407/Startup-Funding-Analysis",
       page: "/projects/startup-funding",
-      category: "ML"
+      category: "Data Analysis"
     },
     {
       slug: "yelp-sentiment",

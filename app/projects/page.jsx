@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("All");
-  const categories = ["All", "ML", "Full-Stack", "Cloud"];
+  const categories = ["All", "ML", "Full-Stack", "Data Analysis"];
 
   const filteredProjects = activeCategory === "All"
     ? projects

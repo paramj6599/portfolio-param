@@ -12,7 +12,7 @@ const Photo = () => {
                     opacity: 1,
                     transition:{delay: 1, duration: 0.4, ease: "easeIn"},
                 }}
-                className='relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[380px] md:h-[380px] xl:w-[480px] xl:h-[480px]'
+                className='relative w-[240px] h-[240px] sm:w-[320px] sm:h-[320px] md:w-[380px] md:h-[380px] xl:w-[480px] xl:h-[480px]'
             >
                 <Image 
                     src="/assets/President_2.JPG" 

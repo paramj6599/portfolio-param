@@ -6,7 +6,7 @@ const socials = [
     { icon: <FaGithub />, path: "https://github.com/ShaunakJoshi1407"},
     { icon: <FaLinkedinIn />, path: "https://linkedin.com/in/shaunakhemantjoshi/"},
     { icon: <FaCode />, path: "https://leetcode.com/u/shaunakjoshi1407/"},
-    { icon: <FaEnvelope />, path: "mailto:shaunakjoshi@tamu.edu"},
+    { icon: <FaEnvelope />, path: "mailto:shaunakjoshi1407@gmail.com"},
 ]
 
 const Social = ({containerStyles, iconStyles}) => {

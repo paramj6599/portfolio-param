@@ -1,37 +1,41 @@
 "use client";
 
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
 
-import {
-    Select,
-    SelectContent,
-    SelectGroup,
-    SelectItem,
-    SelectLabel,
-    SelectTrigger,
-    SelectValue
-} from '@/components/ui/select';
-
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub, FaDownload } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const info = [
     {
         icon: <FaPhoneAlt />,
         title: 'Phone',
         description: "+1 979-344-3680",
+        link: "tel:+19793443680"
     },
     {
         icon: <FaEnvelope />,
         title: 'Email',
-        description: "shaunakjoshi@tamu.edu",
+        description: "shaunakjoshi1407@gmail.com",
+        link: "mailto:shaunakjoshi1407@gmail.com"
     },
     {
         icon: <FaMapMarkerAlt />,
         title: 'Address',
-        description: "Bryan, Texas, 77801",
+        description: "Minneapolis, MN",
+        link: "https://maps.google.com/?q=Minneapolis,Minnesota"
+    },
+    {
+        icon: <FaLinkedin />,
+        title: 'LinkedIn',
+        description: "Shaunak Joshi",
+        link: "https://linkedin.com/in/shaunakjoshi"
+    },
+    {
+        icon: <FaGithub />,
+        title: 'GitHub',
+        description: "ShaunakJoshi1407",
+        link: "https://github.com/ShaunakJoshi1407"
     },
 ];
 
@@ -43,67 +47,56 @@ const Contact = () => {
                 opacity: 1 , 
                 transition: {delay: 2.4, duration: 0.4, ease: "easeIn"}
             }}
-            className='py-6'
+            className='py-8 sm:py-10 md:py-12'
         >
             <div className="container mx-auto">
-                <div className='flex flex-col xl:flex-row-reverse gap-[60px] xl:gap-[120px]'>
-                    {/* info */}
-                    <div className="flex-1 flex flex-col items-start order-1 xl:order-none mb-8 xl:mb-0 mt-10" >
-                        <h1 className="text-3xl font-bold text-accent">Open for opportunities.</h1>
-                        <p className="mb-4">Let's connect and build something awesome together!</p>
-                        <ul className='mt-5 flex flex-col gap-10'>
-                            {info.map((item,index) => {
-                                return (
-                                    <li key={index} className='flex items-center gap-6'>
-                                        <div className='w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] /
-                                        text-accent rounded-md flex items-center justify-center'>
-                                            <div className='text-[28px]'>{item.icon}</div>
-                                        </div>
-                                        <div className='flex-1'>
-                                            <p className='text-white/60'>{item.title}</p>
-                                            <h3 className='text-xl'>{item.description}</h3>
-                                        </div>
-                                    </li>
-                                );
-                            })}
-                        </ul>
+                <div className='flex flex-col items-center justify-center max-w-4xl mx-auto'>
+                    {/* Header */}
+                    <div className="text-center mb-10 sm:mb-16 px-4">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">
+                            <span className="text-accent">Get in Touch</span>
+                        </h1>
+                        <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto">
+                            I'm currently open to new opportunities and collaborations. Feel free to reach out through any of the channels below.
+                        </p>
                     </div>
-                    {/* form */}
-                    <div className="xl:w-[45%] order-2 xl:order-none">
-                        <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-                            <h3 className="text-4xl text-accent">Let's work together</h3>
-                            {/* input */}
-                            <div className="mt-2 grid grid-cols-1 md:grid-cols-2 gap-6"> 
-                                <Input type="text" name="firstname" placeholder="First Name"/>
-                                <Input type="text" name="lastname" placeholder="Last Name"/>
-                                <Input type="email" name="email" placeholder="Email"/>
-                                <Input type="text" name="phone" placeholder="Phone No."/>
-                            </div>
-                            {/* select */}
-                            <Select>
-                                <SelectTrigger className="w-full">
-                                    <SelectValue placeholder="Select a Service"/>
-                                </SelectTrigger>
-                                <SelectContent>
-                                    <SelectGroup>
-                                        <SelectLabel>Select a service</SelectLabel>
-                                        <SelectItem value="est">Full Stack Development</SelectItem>
-                                        <SelectItem value="cst">Backend Development</SelectItem>
-                                        <SelectItem value="mst">Cloud Engineering</SelectItem>
-                                    </SelectGroup>
-                                </SelectContent>
-                            </Select>
-                            {/* textarea */}
-                            <Textarea
-                                name="message"
-                                className="h-[200px]"
-                                placeholder="Type your message here"
-                            />
-                            {/* btn */}
-                            <Button type="submit" size="md" className="max-w-40">
-                                Send Message
+                    
+                    {/* Contact info cards */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full px-4 sm:px-0">
+                        {info.map((item, index) => (
+                            <a 
+                                href={item.link} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                key={index}
+                                className="group w-full"
+                            >
+                                <motion.div 
+                                    className='flex flex-col items-center p-4 sm:p-6 md:p-8 bg-[#27272c] rounded-xl border border-white/5 group-hover:border-accent/30 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-accent/5 h-full'
+                                    whileHover={{ y: -5 }}
+                                    whileTap={{ scale: 0.98 }} // Add feedback on tap for mobile
+                                >
+                                    <div className='w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] bg-[#1c1c22] text-accent rounded-xl flex items-center justify-center mb-4 md:mb-6 group-hover:bg-accent group-hover:text-[#1c1c22] transition-all duration-300'>
+                                        <div className='text-2xl sm:text-3xl'>{item.icon}</div>
+                                    </div>
+                                    <p className='text-white/60 font-medium text-sm sm:text-base'>{item.title}</p>
+                                    <h3 className='text-lg sm:text-xl text-center mt-1 sm:mt-2 group-hover:text-accent transition-all break-all sm:break-normal'>{item.description}</h3>
+                                </motion.div>
+                            </a>
+                        ))}
+                    </div>
+                    
+                    {/* Resume button */}
+                    <div className="mt-12 sm:mt-16 w-full px-4 sm:px-0">
+                        <Link href="/resume-view" className="w-full sm:w-auto block">
+                            <Button 
+                                variant="outline" 
+                                size="lg" 
+                                className="flex items-center justify-center gap-3 px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg w-full sm:w-auto"
+                            >
+                                <FaDownload /> View My Resume
                             </Button>
-                        </form>
+                        </Link>
                     </div>
                 </div>
             </div>
