@@ -7,7 +7,8 @@ const projects = [
       stack: ["Python", "React.js", "Next.js", "LangChain", "PostgreSQL"],
       image: "/assets/work/MedGet.png",
       github: "https://github.com/Aggies-Create-NeuroX1/MedGet",
-      page: "/projects/medget"
+      page: "/projects/medget",
+      category: "ML"
     },
     {
       slug: "gradvisor",
@@ -17,7 +18,8 @@ const projects = [
       stack: ["React.js", "Python", "Django", "SQLite"],
       image: "/assets/work/Gradvisor.png",
       github: "https://mohitsarin-tamu.github.io/Gradvisor/",
-      page: "/projects/gradvisor"
+      page: "/projects/gradvisor",
+      category: "ML"
     },
     {
         slug: "resqvision",
@@ -27,7 +29,8 @@ const projects = [
         stack: ["React.js", "D3.js", "Vite", "Tailwind", "JSON", "GitHub Pages"],
         image: "/assets/work/ResQVision.png",
         github: "https://github.com/ShaunakJoshi1407/ResQVision",
-        page: "/projects/resqvision"
+        page: "/projects/resqvision",
+        category: "Full-Stack"
     },
     {
       slug: "epiccaptions",
@@ -37,7 +40,8 @@ const projects = [
       stack: ["React.js", "Next.js", "TypeScript", "Node.js", "FFmpeg"],
       image: "/assets/work/subtitle_3.png",
       github: "https://github.com/ShaunakJoshi1407/epicCaptions",
-      page: "/projects/epiccaptions"
+      page: "/projects/epiccaptions",
+      category: "Full-Stack"
     },
     {
       slug: "salon-management",
@@ -47,7 +51,8 @@ const projects = [
       stack: ["Java", "JSP", "MySQL", "HTML", "JS"],
       image: "/assets/work/salon_3.webp",
       github: "https://github.com/ShaunakJoshi1407/Salon-Management-System",
-      page: "/projects/salon-management"
+      page: "/projects/salon-management",
+      category: "Full-Stack"
     },
     {
       slug: "startup-funding",
@@ -57,7 +62,8 @@ const projects = [
       stack: ["Python", "Pandas", "Matplotlib", "ML"],
       image: "/assets/work/startup_2.webp",
       github: "https://github.com/ShaunakJoshi1407/Startup-Funding-Analysis",
-      page: "/projects/startup-funding"
+      page: "/projects/startup-funding",
+      category: "ML"
     },
     {
       slug: "yelp-sentiment",
@@ -67,7 +73,8 @@ const projects = [
       stack: ["Python", "Scikit-learn", "NLP"],
       image: "/assets/work/yelp.webp",
       github: "https://github.com/ShaunakJoshi1407/Yelp_Sentiment_Analysis",
-      page: "/projects/yelp-sentiment"
+      page: "/projects/yelp-sentiment",
+      category: "ML"
     },
     {
       slug: "blindness-detection",
@@ -77,7 +84,8 @@ const projects = [
       stack: ["Python", "OpenCV", "PyTorch"],
       image: "/assets/work/blindness.webp",
       github: "https://github.com/ShaunakJoshi1407/Blindness-Detection",
-      page: "/projects/blindness-detection"
+      page: "/projects/blindness-detection",
+      category: "ML"
     }
   ];
   
