@@ -39,6 +39,21 @@ const info = [
     },
 ];
 
+// Helper function to format email for different screen sizes
+const formatEmail = (email) => {
+    // Create a more readable version for small screens by adding a line break
+    const [username, domain] = email.split('@');
+    
+    return (
+        <>
+            <span className="hidden sm:inline">{email}</span>
+            <span className="inline sm:hidden">
+                {username}<wbr />@<wbr />{domain}
+            </span>
+        </>
+    );
+};
+
 const Contact = () => {
     return (
         <motion.section
@@ -69,10 +84,10 @@ const Contact = () => {
                                 target="_blank" 
                                 rel="noopener noreferrer" 
                                 key={index}
-                                className="group w-full"
+                                className={`group w-full ${item.title === 'Email' ? 'sm:col-span-2 lg:col-span-1' : ''}`}
                             >
                                 <motion.div 
-                                    className='flex flex-col items-center p-4 sm:p-6 md:p-8 bg-[#27272c] rounded-xl border border-white/5 group-hover:border-accent/30 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-accent/5 h-full'
+                                    className={`flex flex-col items-center ${item.title === 'Email' ? 'p-3 sm:p-5 md:p-6' : 'p-4 sm:p-6 md:p-8'} bg-[#27272c] rounded-xl border border-white/5 group-hover:border-accent/30 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-accent/5 h-full`}
                                     whileHover={{ y: -5 }}
                                     whileTap={{ scale: 0.98 }} // Add feedback on tap for mobile
                                 >
@@ -80,7 +95,15 @@ const Contact = () => {
                                         <div className='text-2xl sm:text-3xl'>{item.icon}</div>
                                     </div>
                                     <p className='text-white/60 font-medium text-sm sm:text-base'>{item.title}</p>
-                                    <h3 className='text-lg sm:text-xl text-center mt-1 sm:mt-2 group-hover:text-accent transition-all break-all sm:break-normal'>{item.description}</h3>
+                                    {item.title === 'Email' ? (
+                                        <h3 className="text-xs sm:text-sm md:text-base text-center mt-1 sm:mt-2 group-hover:text-accent transition-all break-all overflow-hidden">
+                                            {formatEmail(item.description)}
+                                        </h3>
+                                    ) : (
+                                        <h3 className="text-base sm:text-lg md:text-xl text-center mt-1 sm:mt-2 group-hover:text-accent transition-all break-words">
+                                            {item.description}
+                                        </h3>
+                                    )}
                                 </motion.div>
                             </a>
                         ))}
