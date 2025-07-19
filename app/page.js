@@ -18,13 +18,11 @@ const Home = () => {
           <h2 className="h2 mb-6">
             <span className="text-accent">Shaunak Joshi</span>
           </h2>
-          <p className="max-w-[500px] mb-15 text-white/90 mt-10">
-            Software Developer who wants to create amazing user-centred digital products!
-          <br/>
+          {/* Personal tagline/mission statement */}
+          <p className="text-xl font-light italic text-white/80 mb-6">
+            I build <span className="text-accent">microservices</span> and manage <span className="text-accent">cloud infrastructure</span> that actually work at scale. Focused on creating reliable distributed systems that stand the test of time and deliver real business value.
           </p>
           {/* button and socials */}
-          <br/>
-          <br/>
           <br/>
           <div className="flex flex-col xl:flex-row items-center gap-8">
             <a href={resumeLink} target="_blank" rel="noopener noreferrer" className="button-hover">

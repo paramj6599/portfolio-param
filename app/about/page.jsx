@@ -11,15 +11,15 @@ const AboutMe = () => {
         </h1>
 
         <p className="text-xl">
-          I’m currently working as a <span className="text-accent">Software Engineer</span> at <span className="text-accent">Hewlett Packard Enterprise</span> in Minneapolis, MN, where I am working with the DevSecOps team and mostly contributing to CI and Security projects. I recently completed my <span className="text-accent">Master’s in Computer Science</span> from <span className="text-accent">Texas A&M University</span> in May 2025, following a Bachelor’s degree in <span className="text-accent">Information Technology</span> from <span className="text-accent">Savitribai Phule Pune University</span>.
+          I'm currently working as a <span className="text-accent">Software Engineer</span> at <span className="text-accent">Hewlett Packard Enterprise</span> in Minneapolis, MN, where I'm driving tangible business outcomes through DevSecOps initiatives. My work on CI pipelines and security automation has directly improved deployment reliability and reduced security vulnerabilities across our product teams. I recently completed my <span className="text-accent">Master's in Computer Science</span> from <span className="text-accent">Texas A&M University</span> in May 2025, following a Bachelor's degree in <span className="text-accent">Information Technology</span> from <span className="text-accent">Savitribai Phule Pune University</span>.
         </p>
 
         <p className="text-xl mt-6 mb-4">
-          My previous roles include working as a Student Assistant at <span className="text-accent">Texas A&M</span> and an Associate Member of Technical Staff at <span className="text-accent">Platform9 Systems</span>. Across these experiences, I’ve designed robust APIs, automated Kubernetes cluster deployment, enhanced error diagnostics in cloud-native systems, and contributed to open-source CLI tooling.
+          Throughout my career, I've consistently translated technical expertise into business value. At <span className="text-accent">Platform9 Systems</span>, my work automating Kubernetes cluster deployments reduced setup time by 70% and eliminated costly configuration errors. At <span className="text-accent">Texas A&M</span>, I designed APIs and error diagnostic systems that helped our research team meet critical deadlines and improved system uptime. I believe great engineering isn't just about writing code, it's about solving real problems that impact the bottom line.
         </p>
 
         <p className="text-xl mt-6 mb-4">
-          I’m currently exploring new opportunities in <span className="text-accent">Distributed Systems</span> and <span className="text-accent">DevOps</span> roles. If you’re working on something exciting or hiring in these areas, I’d love to connect!
+          I'm currently seeking roles where I can architect <span className="text-accent">Distributed Systems</span> and implement <span className="text-accent">DevOps</span> practices that drive measurable business results. If your organization values both technical excellence and business impact, I'd love to discuss how my background in scalable infrastructure and automation could benefit your team.
         </p>
 
         <br />
