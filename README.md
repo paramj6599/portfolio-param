@@ -1,4 +1,4 @@
-# Shaunak Joshi's Portfolio
+# Param Joshi's Portfolio
 
 Welcome to the GitHub repository of my personal portfolio website! This site showcases my projects, skills, and professional journey in software development and data science.
 
@@ -27,4 +27,4 @@ To set up this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ShaunakJoshi1407/portfolio.git
+   git clone https://github.com/paramj6599/portfolio-param.git
