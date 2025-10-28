@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 const ResumeViewer = () => {
   const [loading, setLoading] = useState(true);
   const resumeLink = "https://drive.google.com/file/d/1XeN9r6JTYStMCZNG8dAd6zdRWYr66MQ9/view?usp=drive_link";
-  
   useEffect(() => {
     // Add a short delay to simulate loading and improve UX
     const timer = setTimeout(() => {
