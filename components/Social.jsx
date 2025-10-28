@@ -3,10 +3,10 @@ import Link from "next/link";
 import {FaGithub, FaLinkedinIn, FaCode, FaEnvelope} from "react-icons/fa";
 
 const socials = [
-    { icon: <FaGithub />, path: "https://github.com/ShaunakJoshi1407"},
-    { icon: <FaLinkedinIn />, path: "https://linkedin.com/in/shaunakhemantjoshi/"},
-    { icon: <FaCode />, path: "https://leetcode.com/u/shaunakjoshi1407/"},
-    { icon: <FaEnvelope />, path: "mailto:shaunakjoshi1407@gmail.com"},
+    { icon: <FaGithub />, path: "https://github.com/paramj6599"},
+    { icon: <FaLinkedinIn />, path: "https://linkedin.com/in/param-joshi-68a520149/"},
+    { icon: <FaCode />, path: "https://leetcode.com/u/param6599/"},
+    { icon: <FaEnvelope />, path: "mailto:param6599@gmail.com"},
 ]
 
 const Social = ({containerStyles, iconStyles}) => {

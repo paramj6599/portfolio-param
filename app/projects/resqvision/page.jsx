@@ -34,7 +34,7 @@ const ResqVision = () => {
         </ul>
         <div className="flex gap-4">
           <Link
-            href="https://github.com/ShaunakJoshi1407/ResQVision"
+            href="https://github.com/paramj6599/ResQVision"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-black px-4 py-2 rounded font-medium hover:bg-accent hover:text-white transition"

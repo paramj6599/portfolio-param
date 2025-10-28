@@ -10,32 +10,32 @@ const info = [
     {
         icon: <FaPhoneAlt />,
         title: 'Phone',
-        description: "+1 979-344-3680",
-        link: "tel:+19793443680"
+        description: "+1 979-349-5468",
+        link: "tel:+19793495468"
     },
     {
         icon: <FaEnvelope />,
         title: 'Email',
-        description: "shaunakjoshi1407@gmail.com",
-        link: "mailto:shaunakjoshi1407@gmail.com"
+        description: "param65999@gmail.com",
+        link: "mailto:param6599@gmail.com"
     },
     {
         icon: <FaMapMarkerAlt />,
         title: 'Address',
-        description: "Minneapolis, MN",
-        link: "https://maps.google.com/?q=Minneapolis,Minnesota"
+        description: "Stoneham, Massachusetts",
+        link: ""
     },
     {
         icon: <FaLinkedin />,
         title: 'LinkedIn',
-        description: "Shaunak Joshi",
-        link: "https://linkedin.com/in/shaunakjoshi"
+        description: "Paeram Joshi",
+        link: "https://www.linkedin.com/in/param-joshi-68a520149/"
     },
     {
         icon: <FaGithub />,
         title: 'GitHub',
-        description: "ShaunakJoshi1407",
-        link: "https://github.com/ShaunakJoshi1407"
+        description: "paramj6599",
+        link: "https://github.com/paramj6599"
     },
 ];
 

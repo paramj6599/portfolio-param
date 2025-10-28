@@ -27,7 +27,7 @@ const EpicCaptionsPage = () => {
         </p>
         <div className="flex gap-3 mt-6">
           <Link
-            href="https://github.com/ShaunakJoshi1407/epicCaptions"
+            href="https://github.com/paramj6599/EpicCaptions"
             target="_blank"
             rel="noopener noreferrer"
             className="text-accent hover:underline text-sm flex items-center gap-1"

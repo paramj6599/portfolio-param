@@ -28,7 +28,7 @@ const GradvisorPage = () => {
         </p>
         <div className="flex gap-3 mt-6">
           <Link
-            href="https://mohitsarin-tamu.github.io/Gradvisor/"
+            href="https://github.com/paramj6599/Gradvisor-"
             target="_blank"
             rel="noopener noreferrer"
             className="text-accent hover:underline text-sm flex items-center gap-1"

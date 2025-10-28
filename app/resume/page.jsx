@@ -36,28 +36,28 @@ const experience = {
   title: "Experience",
   items: [
     {
-      company: "Hewlett Packard Enterprise",
-      position: "Software Engineer (Systems)",
+      company: "Community Dreams Foundation",
+      position: "Software Engineer",
       duration: "July 2025 - Present",
-      logo: "/assets/logos/hpe.webp",
+      logo: "/assets/logos/logo.png",
+    },
+    // {
+    //   company: "Northeastern University",
+    //   position: "Student Software Developer",
+    //   duration: "Jan. 2024 - May. 2025",
+    //   logo: "/assets/logos/tamu.webp",
+    // },
+    {
+      company: "Enthral.ai",
+      position: "Software Engineer",
+      duration: "Jul. 2021 - June 2022",
+      logo: "/assets/logos/download.jpeg",
     },
     {
-      company: "Texas A&M University",
-      position: "Student Software Developer",
-      duration: "Jan. 2024 - May. 2025",
-      logo: "/assets/logos/tamu.webp",
-    },
-    {
-      company: "Platform9 Systems",
-      position: "Associate Member of Technical Staff",
-      duration: "Jul. 2021 - June 2023",
-      logo: "/assets/logos/platform9.webp",
-    },
-    {
-      company: "Platform9 Systems",
-      position: "Software Engineering Intern",
-      duration: "Feb. 2021 - May 2021",
-      logo: "/assets/logos/platform9.webp",
+      company: "Intelliwsift",
+      position: "Software Engineer",
+      duration: "July 2022 - August 2023",
+      logo: "/assets/logos/download.png",
     },
   ],
 };
@@ -66,14 +66,14 @@ const education = {
   title: "My education",
   items: [
     {
-      institution: "Texas A&M University",
+      institution: "Northeastern University",
       degree: "Master of Science in Computer Science",
       duration: "Aug. 2023 - May 2025",
-      logo: "/assets/logos/tamu.webp",
+      logo: "/assets/logos/images.png",
     },
     {
-      institution: "University of Pune",
-      degree: "BE in Information Technology",
+      institution: "Pune Institute of Computer Technology",
+      degree: "BE in Computer Engineering",
       duration: "Aug. 2017 - June 2021",
       logo: "/assets/logos/pict.webp",
     },

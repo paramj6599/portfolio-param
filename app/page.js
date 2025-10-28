@@ -10,8 +10,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   // Keep this for direct download if needed
-  const resumeDownloadLink = "https://drive.google.com/file/d/1dBe1KK1hqP2HHLr4rLvYBaOs3voehWJt/view?usp=drive_link";
-
+  const resumeDownloadLink = "https://drive.google.com/file/d/1XeN9r6JTYStMCZNG8dAd6zdRWYr66MQ9/view?usp=drive_link"
   return <section className="h-full py-6 md:py-0">
     <div className="container mx-auto h-full">
       <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
