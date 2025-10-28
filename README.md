@@ -1,4 +1,4 @@
-# Shaunak Joshi's Portfolio
+# Param Joshi's Portfolio
 
 Welcome to the GitHub repository of my personal portfolio website! This site showcases my projects, skills, and professional journey in software development and data science.
 
