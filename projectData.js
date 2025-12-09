@@ -65,28 +65,28 @@ const projects = [
       page: "/projects/startup-funding",
       category: "Data Analysis"
     },
-    {
-      slug: "yelp-sentiment",
-      title: "Yelp Review Sentiment Analysis",
-      description:
-        "Predicting sentiment of Yelp reviews using NLP and supervised ML models.",
-      stack: ["Python", "Scikit-learn", "NLP"],
-      image: "/assets/work/yelp.webp",
-      github: "https://github.com/ShaunakJoshi1407/Yelp_Sentiment_Analysis",
-      page: "/projects/yelp-sentiment",
-      category: "ML"
-    },
-    {
-      slug: "blindness-detection",
-      title: "Blindness Detection",
-      description:
-        "Computer vision project to detect blindness in eye scan images.",
-      stack: ["Python", "OpenCV", "PyTorch"],
-      image: "/assets/work/blindness.webp",
-      github: "https://github.com/ShaunakJoshi1407/Blindness-Detection",
-      page: "/projects/blindness-detection",
-      category: "ML"
-    }
+    // {
+    //   slug: "yelp-sentiment",
+    //   title: "Yelp Review Sentiment Analysis",
+    //   description:
+    //     "Predicting sentiment of Yelp reviews using NLP and supervised ML models.",
+    //   stack: ["Python", "Scikit-learn", "NLP"],
+    //   image: "/assets/work/yelp.webp",
+    //   github: "https://github.com/ShaunakJoshi1407/Yelp_Sentiment_Analysis",
+    //   page: "/projects/yelp-sentiment",
+    //   category: "ML"
+    // },
+    // {
+    //   slug: "blindness-detection",
+    //   title: "Blindness Detection",
+    //   description:
+    //     "Computer vision project to detect blindness in eye scan images.",
+    //   stack: ["Python", "OpenCV", "PyTorch"],
+    //   image: "/assets/work/blindness.webp",
+    //   github: "https://github.com/ShaunakJoshi1407/Blindness-Detection",
+    //   page: "/projects/blindness-detection",
+    //   category: "ML"
+    // }
   ];
   
   export default projects;  
