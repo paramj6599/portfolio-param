@@ -55,6 +55,17 @@ const projects = [
       category: "Full-Stack"
     },
     {
+      slug: "zypher-finance-agent",
+      title: "Zypher Finance Agent",
+      description:
+        "An AI-powered financial planning agent built with Zypher that helps you analyze spending patterns, estimate goal costs, and create personalized savings plans.",
+      stack: ["Deno", "TypeScript", "REST APIs"],
+      image: "/assets/work/zypher.png",
+      github: "https://github.com/ShaunakJoshi1407/Zypher-Finance-Agent",
+      page: "/projects/zypher-finance-agent",
+      category: "Data Analysis"
+    },
+    {
       slug: "startup-funding",
       title: "Startup Funding Analysis",
       description:
