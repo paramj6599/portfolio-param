@@ -28,7 +28,7 @@ const info = [
     {
         icon: <FaLinkedin />,
         title: 'LinkedIn',
-        description: "Paeram Joshi",
+        description: "Param Joshi",
         link: "https://www.linkedin.com/in/param-joshi-68a520149/"
     },
     {
