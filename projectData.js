@@ -62,7 +62,7 @@ const projects = [
       stack: ["Deno", "TypeScript", "REST APIs"],
       image: "/assets/work/zypher.png",
       github: "https://github.com/ShaunakJoshi1407/Zypher-Finance-Agent",
-      page: "/projects/zypher-finance-agent",
+      page: "/projects/financeagent",
       category: "Data Analysis"
     },
     {
