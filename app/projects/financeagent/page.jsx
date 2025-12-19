@@ -36,4 +36,4 @@ const ZypherPage = () => {
   );
 };
 
-export default KanbasPage;
+export default ZypherPage;
