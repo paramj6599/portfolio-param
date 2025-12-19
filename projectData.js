@@ -44,14 +44,14 @@ const projects = [
       category: "Full-Stack"
     },
     {
-      slug: "salon-management",
-      title: "Salon Management System",
+      slug: "kanbas",
+      title: "Kanbas",
       description:
-        "Web app for managing salon services and appointments with MySQL backend.",
-      stack: ["Java", "JSP", "MySQL", "HTML", "JS"],
-      image: "/assets/work/salon_3.webp",
-      github: "https://github.com/ShaunakJoshi1407/Salon-Management-System",
-      page: "/projects/salon-management",
+        "Developed a replica of the Northeastern University Learning Management System, Canvas, achieving a 48% enhancement in operational performance. Full-stack development of the Canvas learning management system using MongoDB, Express.js, React, Node.js, and RESTful web services.",
+      stack: ["MongoDB", "Express.js", "React", "Node.js"],
+      image: "/assets/work/kanbas.png",
+      github: "https://github.com/paramj6599/WebDev/tree/a6",
+      page: "/projects/kanbas",
       category: "Full-Stack"
     },
     {
